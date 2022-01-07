@@ -1,0 +1,12 @@
+{
+  "name": "node-starter",
+  "version": "0.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "json-find": "^2.0.8",
+    "jsonpath": "^1.1.1",
+    "traverse": "^0.6.6"
+  }
+}
