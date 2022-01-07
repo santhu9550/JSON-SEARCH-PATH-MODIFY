@@ -48,7 +48,7 @@ function test() {
     console.log(paths);
 
     //changing value of all matching key's
-    const nodes = jp.apply(data, '$..host', function (value) {
+    jp.apply(data, '$..host', function (value) {
       return 'Changed hosturl';
     });
 
