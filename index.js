@@ -1,4 +1,3 @@
-var traverse = require('traverse');
 const JsonFind = require('json-find');
 const jp = require('jsonpath');
 
