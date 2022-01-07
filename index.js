@@ -36,12 +36,19 @@ function test() {
       text: 12,
     },
   ];
+
+  // check whether key Exists or not
   const doc = JsonFind(data);
   const keyExists = doc.checkKey('host');
   console.log(keyExists);
+
+  // If key Exists
   if (keyExists) {
+    // Get path's of key
     const paths = jp.paths(data, '$..host');
     console.log(paths);
+
+    //changing value of all matching key's
     const nodes = jp.apply(data, '$..host', function (value) {
       return 'Changed hosturl';
     });
